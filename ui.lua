@@ -614,7 +614,7 @@ function ui:toggle_slot(hotbar, slot, is_enabled)
     end
 
     self.hotbars[hotbar].slot_element[slot]:alpha(opacity)
-    --self.hotbars[hotbar].slot_cost[slot]:alpha(opacity)
+    self.hotbars[hotbar].slot_cost[slot]:alpha(opacity) -- when you comment this out, the color does not change
     self.hotbars[hotbar].slot_icon[slot]:alpha(opacity)
 end
 
